@@ -1,0 +1,21 @@
+{% if f1 != None %}
+<div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+    <a href="{{f1.get_absolute_url}}" class="text-white">
+        <img src="{{f1.himage.url}}"
+             class="img-fluid rounded-bottom" alt="sample image">
+        <div class="mask rgba-stylish-strong">
+            <div class="text-white text-center py-lg-5 py-0 my-0">
+                <div>
+                    <h2 class="card-title font-weight-bold pt-2">
+                        <strong>{{f1.title}}</strong>
+                    </h2>
+
+                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+</div>
+{% endif  %}
