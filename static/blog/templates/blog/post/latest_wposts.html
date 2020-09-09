@@ -1,0 +1,45 @@
+{% if f2 != None and f3 != None %}
+<!--News tile -->
+<div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+    <a href="{{f2.get_absolute_url}}" class="text-white">
+        <img src="{{f2.himage.url}}"
+             class="img-fluid rounded-bottom" alt="sample image">
+        <div class="mask rgba-stylish-strong">
+            <div class="text-white text-center py-lg-5 py-0 my-0">
+                <div>
+                    <h4 class="card-title font-weight-bold pt-2">
+                        <strong>{{f2.title}}</strong>
+                    </h4>
+
+                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+</div>
+<!--News tile -->
+
+<!--News tile -->
+<div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+    <a href="{{f3.get_absolute_url}}" class="text-white">
+        <img src="{{f3.himage.url}}"
+             class="img-fluid rounded-bottom" alt="sample image">
+        <div class="mask rgba-stylish-strong">
+            <div class="text-white text-center py-lg-5 py-0 my-0">
+                <div>
+                    <h4 class="card-title font-weight-bold pt-2">
+                        <strong>{{f3.title}}</strong>
+                    </h4>
+
+                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+</div>
+<!--News tile -->
+{% endif %}
